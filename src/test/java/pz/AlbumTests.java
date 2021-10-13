@@ -101,7 +101,7 @@ public class AlbumTests extends BaseTest {
         given()
                 .header("Authorization", token)
                 .when()
-                .post("https://api.imgur.com/3/image/L2AMlFb/favorite")
+                .post("https://api.imgur.com/3/album/L2AMlFb/favorite")
                 .prettyPeek()
                 .then()
                 .statusCode(404);
@@ -113,7 +113,7 @@ public class AlbumTests extends BaseTest {
         given()
                 .header("Authorization", token)
                 .when()
-                .post("https://api.imgur.com/3/image/L2AMlFb/favorite")
+                .post("https://api.imgur.com/3/album/L2AMlFb/favorite")
                 .prettyPeek()
                 .then()
                 .statusCode(404);
